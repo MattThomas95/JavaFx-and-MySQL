@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Screens.LoginScreenController">
+    <children>
+      <TextField fx:id="usernameField" layoutX="83.0" layoutY="185.0" promptText="Username" />
+      <TextField fx:id="passwordField" layoutX="84.0" layoutY="224.0" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="84.0" layoutY="287.0" mnemonicParsing="false" onAction="#loginButtonPushed" prefHeight="25.0" prefWidth="149.0" text="Login" />
+      <Label fx:id="loginLabel2" layoutX="88.0" layoutY="122.0" prefHeight="32.0" prefWidth="141.0" text="Login to Continue">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7238095238095238" startX="1.0">
+               <stops>
+                  <Stop color="DODGERBLUE" />
+                  <Stop color="#7abffc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="loginLabel1" layoutX="110.0" layoutY="87.0" prefHeight="35.0" prefWidth="97.0" text="Welcome!">
+         <font>
+            <Font name="HoloLens MDL2 Assets" size="22.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.7238095238095238" startX="1.0">
+               <stops>
+                  <Stop color="DODGERBLUE" />
+                  <Stop color="#7abffc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" stroke="BLACK" strokeType="INSIDE" width="316.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="316.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="25.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" width="316.0" />
+    </children>
+</AnchorPane>
